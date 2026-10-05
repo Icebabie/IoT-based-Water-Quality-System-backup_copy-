@@ -1,0 +1,121 @@
+{
+  "dataset": "kaggle",
+  "raw_rows": 3276,
+  "dropped_duplicate_or_empty_rows": 0,
+  "implausible_set_to_nan": {},
+  "missing_before_imputation": {
+    "ph": 491,
+    "turbidity": 0,
+    "tds": 0,
+    "conductivity": 0,
+    "hardness": 0,
+    "chloramines": 0,
+    "sulfate": 781,
+    "organic_carbon": 0,
+    "trihalomethanes": 162
+  },
+  "train_rows": 2620,
+  "test_rows": 656,
+  "params": {
+    "clip": {
+      "ph": [
+        3.526396296176279,
+        10.92413974320156
+      ],
+      "turbidity": [
+        2.1518548637059927,
+        5.7569486402458345
+      ],
+      "tds": [
+        5171.033197561822,
+        45228.56675874231
+      ],
+      "conductivity": [
+        270.1957401512859,
+        620.3388216694816
+      ],
+      "hardness": [
+        113.56671686783822,
+        278.1349692902976
+      ],
+      "chloramines": [
+        3.201897992248316,
+        11.098758756708476
+      ],
+      "sulfate": [
+        231.65412264734613,
+        433.4593120184643
+      ],
+      "organic_carbon": [
+        6.539923492773567,
+        22.130844428193008
+      ],
+      "trihalomethanes": [
+        27.40127425575149,
+        105.4959746938135
+      ]
+    },
+    "median": {
+      "ph": 7.035036795196814,
+      "turbidity": 3.9696018473949692,
+      "tds": 20866.335842223954,
+      "conductivity": 424.94133573042495,
+      "hardness": 196.92806093779086,
+      "chloramines": 7.118161983426347,
+      "sulfate": 333.073545745888,
+      "organic_carbon": 14.214779561341032,
+      "trihalomethanes": 66.56570894421057
+    },
+    "scaler": {
+      "ph": {
+        "mean": 7.080742181419061,
+        "std": 1.4272958982181339
+      },
+      "turbidity": {
+        "mean": 3.973663189674636,
+        "std": 0.7672953533137837
+      },
+      "tds": {
+        "mean": 21854.054255621875,
+        "std": 8563.314413043077
+      },
+      "conductivity": {
+        "mean": 427.80058430731225,
+        "std": 79.72520128298773
+      },
+      "hardness": {
+        "mean": 196.53065133302184,
+        "std": 31.901004268648844
+      },
+      "chloramines": {
+        "mean": 7.115578902800612,
+        "std": 1.5607816849785487
+      },
+      "sulfate": {
+        "mean": 333.8232909021466,
+        "std": 35.17553883683056
+      },
+      "organic_carbon": {
+        "mean": 14.273515318179397,
+        "std": 3.2414438554311324
+      },
+      "trihalomethanes": {
+        "mean": 66.1827169681748,
+        "std": 15.445730246726944
+      }
+    }
+  },
+  "core_features": [
+    "ph",
+    "turbidity",
+    "tds",
+    "conductivity"
+  ],
+  "extra_features": [
+    "hardness",
+    "chloramines",
+    "sulfate",
+    "organic_carbon",
+    "trihalomethanes"
+  ]
+}

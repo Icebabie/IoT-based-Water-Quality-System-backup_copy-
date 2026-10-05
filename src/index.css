@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-ink-900 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-md border border-slate-200 bg-white;
+  }
+  .panel-title {
+    @apply text-xs font-semibold uppercase tracking-wider text-ink-500;
+  }
+}

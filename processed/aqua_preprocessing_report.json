@@ -1,0 +1,154 @@
+{
+  "dataset": "aqua",
+  "raw_rows": 1361,
+  "dropped_duplicate_or_empty_rows": 0,
+  "implausible_set_to_nan": {
+    "temperature": 1,
+    "dissolvedOxygen": 10,
+    "conductivity": 1
+  },
+  "missing_before_imputation": {
+    "ph": 1,
+    "temperature": 35,
+    "dissolvedOxygen": 19,
+    "conductivity": 39,
+    "bod": 68,
+    "nitrate": 210,
+    "fecal_coliform": 189,
+    "total_coliform": 135
+  },
+  "cpcb_class_counts": {
+    "D": 406,
+    "C": 283,
+    "A": 208,
+    "NaN": 207,
+    "B": 189,
+    "E": 44,
+    "Below E": 24
+  },
+  "cpcb_tier_counts": {
+    "WARNING": 689,
+    "NORMAL": 397,
+    "NaN": 207,
+    "ABNORMAL": 68
+  },
+  "train_rows": 1088,
+  "test_rows": 273,
+  "params": {
+    "clip": {
+      "ph": [
+        5.9,
+        8.5
+      ],
+      "temperature": [
+        8.0,
+        32.47000000000006
+      ],
+      "dissolvedOxygen": [
+        2.0105,
+        9.747196099999993
+      ],
+      "conductivity": [
+        46.14,
+        20398.835018
+      ],
+      "bod": [
+        0.04,
+        45.14999999999992
+      ],
+      "nitrate": [
+        0.0691153,
+        225.54999999999836
+      ],
+      "fecal_coliform": [
+        2.0,
+        338345.0000000035
+      ],
+      "total_coliform": [
+        0.034050000000000004,
+        910540.4999999512
+      ]
+    },
+    "median": {
+      "ph": 7.7,
+      "temperature": 26.1833333,
+      "dissolvedOxygen": 7.2,
+      "conductivity": 416.583333,
+      "bod": 2.0375,
+      "nitrate": 0.9782500000000001,
+      "fecal_coliform": 120.0,
+      "total_coliform": 238.71212100000002
+    },
+    "scaler": {
+      "ph": {
+        "mean": 7.594345895220588,
+        "std": 0.507931308326353
+      },
+      "temperature": {
+        "mean": 25.075960872058825,
+        "std": 4.349563063102979
+      },
+      "dissolvedOxygen": {
+        "mean": 6.95037184969669,
+        "std": 1.3191542204775615
+      },
+      "conductivity": {
+        "mean": 1126.7939771431984,
+        "std": 2800.7866503808277
+      },
+      "bod": {
+        "mean": 3.592518461286764,
+        "std": 5.971772840227707
+      },
+      "nitrate": {
+        "mean": 5.850087195771124,
+        "std": 26.15112462663565
+      },
+      "fecal_coliform": {
+        "mean": 7543.286939807312,
+        "std": 39956.86454468693
+      },
+      "total_coliform": {
+        "mean": 18022.43340337275,
+        "std": 101596.88230508647
+      },
+      "conductivity_log10": {
+        "mean": 2.655924886377669,
+        "std": 0.4945359522223914
+      },
+      "bod_log10": {
+        "mean": 0.5185067828286548,
+        "std": 0.30813957422804683
+      },
+      "nitrate_log10": {
+        "mean": 0.3957014780236758,
+        "std": 0.39729622790756086
+      },
+      "fecal_coliform_log10": {
+        "mean": 2.15581800770789,
+        "std": 1.068691173774837
+      },
+      "total_coliform_log10": {
+        "mean": 2.2353714304611936,
+        "std": 1.4219392075348305
+      }
+    }
+  },
+  "core_features": [
+    "ph",
+    "temperature",
+    "dissolvedOxygen",
+    "conductivity"
+  ],
+  "extra_features": [
+    "bod",
+    "nitrate",
+    "fecal_coliform",
+    "total_coliform"
+  ],
+  "status_rule_counts_train": {
+    "NORMAL": 750,
+    "ABNORMAL": 205,
+    "WARNING": 133
+  }
+}
